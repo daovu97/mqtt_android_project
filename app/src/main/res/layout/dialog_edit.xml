@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editCardName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/edit_name_hint"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_creator="@integer/google_play_services_version"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editHeader" />
+
+    <Spinner
+        android:id="@+id/editColorSelect"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:entries="@array/devices"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCardName" />
+
+    <Button
+        android:id="@+id/editSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginBottom="8dp"
+        android:text="@string/save_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editColorSelect"
+        app:layout_constraintTop_toBottomOf="@+id/editColorSelect" />
+
+    <Button
+        android:id="@+id/editCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginBottom="8dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editColorSelect"
+        app:layout_constraintTop_toBottomOf="@+id/editColorSelect" />
+
+    <Button
+        android:id="@+id/editDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="18dp"
+
+        android:layout_marginBottom="8dp"
+        android:text="@string/delete_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editCancel"
+        app:layout_constraintStart_toEndOf="@+id/editSave"
+        app:layout_constraintTop_toBottomOf="@+id/editColorSelect" />
+
+    <TextView
+        android:id="@+id/editHeader"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#39393A"
+        android:padding="10dp"
+        android:text="@string/edit_button"
+        android:textAlignment="center"
+        android:textColor="#FAB9B9"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

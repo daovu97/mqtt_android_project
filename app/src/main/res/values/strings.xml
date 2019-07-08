@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">IoT App</string>
+    <string name="inputEmail">Email</string>
+    <string name="inputPass">Password</string>
+    <string name="noteText">Note: This application is only logged by the account  provided by admin</string>
+    <string name="reset_tv">RESET</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="login">LOGIN</string>
+    <string name="note">Note: This application is only logged by the  account provided by admin</string>
+    <string name="no_acc_tv">No account yet, create an account</string>
+    <string name="header">SmartHome</string>
+    <string name="no_device">No device, add new</string>
+    <string name="user_code">User code</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="add_button">ADD</string>
+    <string name="delete_button">DELETE</string>
+    <string name="edit_button">EDIT</string>
+    <string name="save_button">SAVE</string>
+    <string name="edit_name_hint">EDIT NAME</string>
+    <string name="name_hint">NAME</string>
+    <string name="add_device_dialog">ADD DEVICE</string>
+    <string-array name="devices">
+        <item>Relay1</item>
+        <item>Relay2</item>
+        <item>Relay3</item>
+        <item>Relay4</item>
+    </string-array>
+</resources>
